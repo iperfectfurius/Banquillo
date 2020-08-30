@@ -1,0 +1,1 @@
+php "C:\inetpub\wwwroot\Banquillo\lol.php"

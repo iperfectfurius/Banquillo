@@ -1,0 +1,164 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: url(../img/back.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	margin: 0;
+}
+
+.container {
+	text-align: center;
+}
+
+h1 {
+	font-size: 4.5em;
+	margin: 0;
+	padding: 30px 0;
+}
+
+#user {
+	display: block;
+	margin-bottom: 25px;
+	text-shadow: .5px .5px 5px rgb(163, 163, 163);
+	color: #000000;
+}
+
+.lista {
+	display: inline-block;
+	width: 30%;
+	max-width: 600px;
+	height: 350px;
+	max-height: 400px;
+	overflow-y: auto;
+	min-width: 350px;
+}
+
+.client {
+	display: flex;
+	width: 100%;
+	height: 45px;
+	background-color: rgba(32, 28, 37, 0.2);
+	backdrop-filter: blur(7px);
+	align-items: center;
+	cursor: pointer;
+	justify-content: space-between;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	transition-duration: 0.15s;
+}
+
+.client:hover {
+	background-color: rgba(32, 28, 37, 0.35);
+}
+
+.banquillo {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url('../img/banquillo.png');
+	background-size: cover;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.client span {
+	vertical-align: middle;
+}
+
+.client span {
+	padding: 5px;
+}
+
+.client input {
+	margin-left: 20px;
+}
+
+#vote {
+	font-size: 19px;
+	line-height: 45px;
+	vertical-align: middle;
+	color: #ffffff;
+	display: inline-block;
+	width: 30%;
+	min-width: 350px;
+	max-width: 600px;
+	height: 45px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	transition-duration: 0.2s;
+	backdrop-filter: blur(7px);
+	background-color: rgba(0, 0, 0, 0.46);
+}
+
+#vote:hover {
+	background-color: rgba(0, 0, 0, 0.288);
+}
+
+.votado {
+	background-color: rgba(185, 61, 61, 0.349);
+}
+
+.patada {
+	position: absolute;
+	margin-top: 9px;
+	right: 10px;
+	color: white;
+	filter: invert(100%);
+	animation-delay: 5s;
+	animation-name: patada;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	transform: rotate(20deg);
+}
+.checkban{
+	display: none;
+}
+canvas{
+	position: absolute !important;
+	top: 200px;
+	right: 0;
+}
+.restantes{
+	color:red;
+	
+}
+@media only screen and (max-width: 550px) {
+	body {
+		background: url(../img/back.jpg) center repeat;
+	}
+	.lista {
+		display: inline-block;
+		height: 250px;
+		max-height: 250px;
+		overflow-y: auto;
+		min-width: 350px;
+	}
+	.mobile{
+		width: 100%;
+		height: 400px;
+		display: flex;
+		align-items: center;
+	}
+	canvas{
+		align-self: center;
+		display: block;
+		margin-top: 350px;
+	}
+
+  }
+@keyframes patada {
+	0% {
+		transform: rotate(30deg);
+	}
+	4% {
+		transform: rotate(0deg);
+	}
+	12% {
+		transform: rotate(20deg);
+	}
+}

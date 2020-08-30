@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<style>
+			div { width: 28px; height: 28px; background: url('banquillo.png'); background-size: cover; }
+		</style>
+	</head>
+	<body>
+		<script>
+			for(i = 0; i < 30; i++)
+			{
+				let div = $(document.createElement('div')).css('filter', 'sepia(100%) saturate(300%) hue-rotate(' + Math.random() * 360 + 'deg) brightness(95%) contrast(80%)');
+				$('body').append(div);
+			}
+		</script>
+	</body>
+</html>

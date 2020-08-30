@@ -16,7 +16,7 @@ socket_read($socket, 2048);
 function send($msg)
 {
 	global $socket;
-	//echo 'Writing \'' . $msg . '\'... ';
+
 	$msg .= PHP_EOL;
 	if (socket_write($socket, $msg, strlen($msg)) !== false) {
 		//echo 'Done' . PHP_EOL;

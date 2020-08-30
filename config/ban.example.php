@@ -78,7 +78,7 @@ function executeBan()
 				//echo 'Error';
 			}
 		}
-		// Log in
+		// Log in (need your SSH ts3 server query account https://forum.teamspeak.com/threads/91465-How-to-use-the-Server-Query )
 		send2('login yourAdminAccount* YourPassword*');
 		socket_read($socket2, 2048, PHP_BINARY_READ);
 

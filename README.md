@@ -1,4 +1,4 @@
-# What is Banquillo?
+# What is Banquillo? ![](https://i.ibb.co/XY5PBp9/banquillo.png)
 
 It's a [web application](http://81.203.8.151/banquillo/) what connects to telnet TS3 server query that **ONLY** clients can be use for fun, this application for
 default needs 4 clients to run(3 if one is masochistic).

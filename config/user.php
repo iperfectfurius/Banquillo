@@ -1,5 +1,6 @@
 <?php
 include './connect.php';
+//No use for now
 $admin = "192.168.1.10";
 $who = $_SERVER['REMOTE_ADDR'];
 

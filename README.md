@@ -22,6 +22,6 @@ Isn't really prepare for automatic installation but you can manually if read all
 
 All clients can go to the web service application and vote for ban!!
 
-# acknowledgment
+# Acknowledgment
 
 * [maduranma](https://github.com/maduranma)
